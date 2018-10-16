@@ -1,5 +1,6 @@
 import { observable, computed, action } from "mobx";
 
+import FieldModel from './FieldModel';
 import AnimalModel from "./AnimalModel";
 
 export default class FarmModel {
@@ -21,12 +22,12 @@ export default class FarmModel {
   }
 
   @action
-  addField(type) {
+  addField = type => {
     this.fields.push(new FieldModel(type));
   }
 
   @action
-  addAnimal(name) {
-    this.animals.push(new AnimalModel(name));
+  addAnimal = () => {
+    this.animals.push(new AnimalModel());
   }
 }

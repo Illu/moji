@@ -1,4 +1,4 @@
-import { observable } from "mobx";
+import { observable, action } from "mobx";
 import { TYPE_ANIMALS } from "../utils/constants";
 import AnimalModel from "./AnimalModel";
 import CropModel from "./CropModel";
@@ -7,6 +7,7 @@ export default class FieldModel {
 
   // If not specified, every new field created will be of type "animal"
   
+  id = Math.random();
   @observable items = [];
   
   type = TYPE_ANIMALS;

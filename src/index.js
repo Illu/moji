@@ -10,7 +10,7 @@ const farm = new FarmModel();
 const player = new PlayerModel();
 
 render(
-  <div>
+  <div className="app-wrapper">
     <DevTools />
     <Provider farm={farm} player={player}>
       <Farm />
