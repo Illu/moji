@@ -9,7 +9,6 @@ const COLORS = {
   },
 }
 
-
 const Wrapper = styled.button`
   width: 150px;
   height: 50px;

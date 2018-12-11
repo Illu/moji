@@ -48,8 +48,8 @@ class Farm extends React.Component {
           <FieldsWrapper>
             {fields.map(field => <Field key={field.id} />)}
           </FieldsWrapper>
-          <Controls />
         </FarmWrapper>
+        <Controls />
       </Wrapper>
     );
   }
